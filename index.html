@@ -13,20 +13,55 @@
     <script src="utils/nouislider.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
     <title>APP Ideas - CSS Border Radius Previwer</title>
   </head>
   <body>
     <div class="container">
       <h1>Observe como funciona a propriedade border-radius do CSS</h1>
       <div class="slider-flex">
-        <div id="slider1" class="slider-width"></div>
-        <div id="slider2" class="slider-width"></div>
+        <div id="sliderTlx" class="slider-width"></div>
+        <div id="sliderTrx" class="slider-width"></div>
       </div>
-      <div id="box" class="box"></div>
+      <div class="vertical-bars">
+        <div class="slider-flex-vertical">
+          <div id="sliderTly" class="slider-height"></div>
+          <div id="sliderBly" class="slider-height"></div>
+        </div>
+        <div id="box" class="box"></div>
+        <div class="slider-flex-vertical">
+          <div id="sliderTry" class="slider-height"></div>
+          <div id="sliderBry" class="slider-height"></div>
+        </div>
+      </div>
       <div class="slider-flex">
-        <div id="slider3" class="slider-width"></div>
-        <div id="slider4" class="slider-width"></div>
+        <div id="sliderBlx" class="slider-width"></div>
+        <div id="sliderBrx" class="slider-width"></div>
+      </div>
+      <div class="shortcode-box">
+        <div class="space">
+          <p>CSS:</p>
+          <button id="copy" class="copy"><i data-feather="copy"></i></button>
+        </div>
+        <div id="shortcode" class="shortcode"></div>
+      </div>
+      <div class="footer">
+        <p>
+          Criado com base no
+          <a
+            href="https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Border-Radius-Previewer.md"
+            >APP Ideas</a
+          >
+          ❤️ - <a href="https://www.linkedin.com/in/jean-c-0108bb104/">Jean</a>
+        </p>
+        <p>
+          Lib JS usada
+          <a href="https://refreshless.com/nouislider/">noUiSlider</a>
+        </p>
       </div>
     </div>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

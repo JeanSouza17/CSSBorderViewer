@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  outline: none;
 }
 
 h1 {
@@ -16,7 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .box {
@@ -24,6 +25,24 @@ body {
   height: 400px;
   background-color: #000;
   margin: 20px;
+}
+
+.shortcode {
+  color: #ff0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.shortcode-box {
+  margin-top: 20px;
+  background-color: #ececec;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .container {
@@ -52,4 +71,54 @@ body {
 
 .slider-width {
   width: 100px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.vertical-bars {
+  display: flex;
+}
+
+.slider-flex-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slider-height {
+  height: 100px;
+}
+
+.slider-height:nth-of-type(2n) {
+  margin-top: 20px;
+}
+
+.noUi-tooltip {
+  display: none;
+}
+
+.noUi-active .noUi-tooltip {
+  display: block;
+}
+
+.space {
+  display: flex;
+  justify-content: space-between;
+}
+
+.space .copy {
+  border: none;
+  display: block;
+  padding: 5px 5px 0px 5px;
+  border-radius: 10px;
+}
+
+.space .copy:hover {
+  cursor: pointer;
+  background-color: #8a8a8a;
 }
